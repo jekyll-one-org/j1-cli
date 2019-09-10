@@ -10,7 +10,7 @@
   "author": "Juergen Adams <jadams@jekyll-one.com> (https://jekyll.one)",
   "license": "MIT",
   "bin": {
-    "j1cli": "bin/j1.js"
+    "j1": "bin/j1 pwd"
   },
   "keywords": [
     "Javascript",
@@ -33,6 +33,7 @@
     "clean": "run-p -s clean:*",
     "clean:start": "echo Cleaning up Project root files ..",
     "clean:logs": "shx rm -f *.log",
-    "test": "node $npm_package_bin_j1cli"
+    "test": "echo current folder is: && node bin/j1 pwd",
+    "test2": "node $npm_package_bin_j1"
   }
 }
