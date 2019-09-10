@@ -1,5 +1,5 @@
 {
-  "name": "@jekyll-one/j1-cli",
+  "name": "j1-cli",
   "version": "2019.0.0",
   "description": "JS commandline wrapper for j1-template",
   "repository": {
@@ -10,7 +10,7 @@
   "author": "Juergen Adams <jadams@jekyll-one.com> (https://jekyll.one)",
   "license": "MIT",
   "bin": {
-    "j1-cli": "bin/j1.js"
+    "j1cli": "bin/j1.js"
   },
   "keywords": [
     "Javascript",
@@ -23,11 +23,16 @@
   },
   "main": "bin/j1.js",
   "dependencies": {
+    "getos": "^3.1.0",
+    "getos-cli": "^1.0.0",
     "shelljs": "^0.4.0",
     "yargs": "^3.9.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "j1"
+    "clean": "run-p -s clean:*",
+    "clean:start": "echo Cleaning up Project root files ..",
+    "clean:logs": "shx rm -f *.log",
+    "test": "node $npm_package_bin_j1cli"
   }
 }
