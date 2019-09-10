@@ -51,9 +51,9 @@ var argv = yargs.usage("$0 command")
   })
   .command('rackup', 'run rackup', function (yargs) {
     if (os === 'win32') {
-      shell.exec('bundle exec rackup %cd%/config.ru');
+      shell.exec('bundle exec rackup -s %WEBSERVER% -o %INTERFACE% -p %PORT% %cd%/config.ru');
     } else {
-      shell.exec('export RACKUP_CFG_PATH=`pwd` && bundle exec rackup $RACKUP_CFG_PATH/config.ru');
+      shell.exec('export RACKUP_CFG_PATH=`pwd` && bundle exec rackup -s $WEBSERVER -o $INTERFACE -p $PORT $RACKUP_CFG_PATH/config.ru');
     }
   })
   .command('getos', 'print the name of the operating system', function (yargs) {
