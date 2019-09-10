@@ -1,0 +1,20 @@
+{
+  "name": "@jekyll-one/j1",
+  "version": "2019.0.0",
+  "description": "JS commandline wrapper for j1-template",
+  "repository": "https://github.com/jekyll-one-org/j1-cli",
+  "homepage": "https://jekyll.one",
+  "author": {
+    "name": "Juergen Adams",
+    "email": "jadams@jekyll-one.com",
+    "url": "https://jekyll.one"
+  },
+  "license": "MIT",
+  "bin": {
+    "github-pages": "bin/j1.js"
+  },
+  "dependencies": {
+    "shelljs": "^0.4.0",
+    "yargs": "^3.9.0"
+  }
+}
