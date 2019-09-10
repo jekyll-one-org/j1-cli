@@ -10,7 +10,7 @@
   "author": "Juergen Adams <jadams@jekyll-one.com> (https://jekyll.one)",
   "license": "MIT",
   "bin": {
-    "j1": "bin/j1 pwd"
+    "j1": "bin/j1.js"
   },
   "keywords": [
     "Javascript",

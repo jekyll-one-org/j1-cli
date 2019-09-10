@@ -49,6 +49,9 @@ var argv = yargs.usage("$0 command")
   .command('gs', 'list current status of the repo', function (yargs) {
     shell.exec('git status');
   })
+  .command('rackup', 'run rackup', function (yargs) {
+    shell.exec('bundle exec rackup %cd%/config.ru -o 0.0.0.0 -p 5000');
+  })
   .command('getos', 'print the name of the operating system', function (yargs) {
     console.log(os);
   })
