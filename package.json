@@ -1,5 +1,5 @@
 {
-  "name": "@jekyll-one/j1",
+  "name": "@jekyll-one/j1-cli",
   "version": "2019.0.0",
   "description": "JS commandline wrapper for j1-template",
   "repository": "https://github.com/jekyll-one-org/j1-cli",
@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "bin": {
-    "github-pages": "bin/j1.js"
+    "j1-cli": "bin/j1.js"
   },
   "dependencies": {
     "shelljs": "^0.4.0",
