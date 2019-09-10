@@ -1,6 +1,6 @@
 {
   "name": "j1-cli",
-  "version": "2019.0.0",
+  "version": "2019.0.1",
   "description": "JS commandline wrapper for j1-template",
   "repository": {
     "type": "git",
