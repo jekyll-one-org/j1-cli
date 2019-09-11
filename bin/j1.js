@@ -51,7 +51,7 @@ var argv = yargs.usage("$0 command")
   })
   .command('rackup', 'run rackup', function (yargs) {
     if (os === 'win32') {
-      shell.exec('bundle exec rackup -s %WEBSERVER% -o %INTERFACE% -p %PORT% %cd%/config.ru');
+      shell.exec('bundle exec rackup -s %WEBSERVER% -o %INTERFACE% -p %PORT% %CD%/config.ru');
     } else {
       shell.exec('export RACKUP_CFG_PATH=`pwd` && bundle exec rackup -s $WEBSERVER -o $INTERFACE -p $PORT $RACKUP_CFG_PATH/config.ru');
     }
@@ -61,7 +61,7 @@ var argv = yargs.usage("$0 command")
   })
   .command('pwd', 'print current working directory', function (yargs) {
     if (os === 'win32') {
-      shell.exec('echo %cd%');
+      shell.exec('echo %CD%');
     } else {
       shell.exec(pwd);
     }
