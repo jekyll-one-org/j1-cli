@@ -8,7 +8,7 @@
  # Product/Info:
  # https://jekyll.one
  #
- # Copyright (C) 2019 Juergen Adams
+ # Copyright (C) 2021 Juergen Adams
  #
  # J1 Template is licensed under the MIT License.
  # For details, see https://jekyll.one
@@ -27,7 +27,6 @@ var getos = require('getos')
 // globals
 // ---------------------------------------------------------------------------
 var os = '';
-
 
 os = getos(function(e,os) {
   var os_info = JSON.stringify(os);

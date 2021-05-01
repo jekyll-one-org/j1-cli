@@ -1,14 +1,21 @@
 {
   "name": "j1-cli",
-  "version": "2019.0.3",
+  "version": "2021.1.0",
   "description": "JS commandline wrapper for j1-template",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jekyll-one-org/j1-cli.git"
   },
   "homepage": "https://jekyll.one",
-  "author": "Juergen Adams <jadams@jekyll-one.com> (https://jekyll.one)",
+  "author": {
+    "name": "Juergen Adams",
+    "email": "jadams@jekyll.one",
+    "url": "https://jekyll.one"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jekyll-one/j1_template/issues"
+  },
   "bin": {
     "j1": "bin/j1.js"
   },
@@ -18,15 +25,12 @@
     "Wrapper",
     "j1-template"
   ],
-  "bugs": {
-    "url": "https://github.com/jekyll-one-org/j1-cli/issues"
-  },
   "main": "bin/j1.js",
   "dependencies": {
     "getos": "^3.1.0",
     "getos-cli": "^1.0.0",
     "shelljs": "^0.4.0",
-    "yargs": "^3.9.0"
+    "yargs": "^16.2.0"
   },
   "devDependencies": {},
   "scripts": {
